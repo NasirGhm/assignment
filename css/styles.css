@@ -1,0 +1,71 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic page styling */
+body {
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    }
+
+h1 {
+    font-size: 2em;
+    color:aliceblue
+}
+
+/* Section styling */
+.menu-item {
+    background-color: #929292;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    position: relative;
+}
+
+.menu-item .title {
+    background-color: #ca0d0a;
+    border: 1px solid rgb(255, 255, 255);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    font-size: 1.25em;
+}
+
+/* Desktop view */
+@media (min-width: 992px) {
+       .menu-item {
+        float: left;
+        width: 30%;
+        margin: 1.66%;
+    }
+}
+
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+    .menu-item {
+        width: 45%;
+        margin: 2.5%;
+    }
+    .menu-item:nth-child(3) {
+        width: 95%;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+    .menu-item {
+        width: 95%;
+        margin: 2.5%;
+    }
+}
